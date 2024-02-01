@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "Vendor Bill with Excise Tax",
+    "name": "MSR Vendor Bill Excise Tax",
     "version": "17.0.0.0",
     "category": "Invoicing",
     "sequence": 11,
-    "summary": "Vendor bill with Excise Tax",
-    "description": """
-Vendor bill with Excise Tax
+    "summary": "Excise Tax In Vendor bill lines",
+    "description": """Excise Tax in 
+Vendor bill Lines
 """,
-    "author": "Rinoy",
+    "author": "Ameen Bin Faizy",
     "depends": ["base", "account"],
     "data": [
         "views/account_account.xml",
