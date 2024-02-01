@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_journal_form_view" model="ir.ui.view">
+        <field name="name">account.journal.form.bank.charges</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='bank_account_id']" position="after">
+                <field name="bank_charge_percent"
+                       invisible="type != 'bank'"/>
+                <field name="bank_charge_account_id"
+                       invisible="type != 'bank'"
+                       required="bank_charge_percent != 0"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
